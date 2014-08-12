@@ -199,12 +199,12 @@
 	}
 	else {
 	    NSString *key = [self.orderedKeys objectAtIndex:index - 1];
-	    value = [self.choices valueForKey:key];
+	    value = [self.choices objectForKey:key];
 	}
     }
     else {
 	NSString *key = [self.orderedKeys objectAtIndex:index];
-	value = [self.choices valueForKey:key];
+	value = [self.choices objectForKey:key];
     }
     return value;
 }
